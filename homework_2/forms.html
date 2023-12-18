@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, tr, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <form>
+            <tr>
+                <th>Control Type</th>
+                <th>Data</th>
+                <th>Control</th>
+            </tr>
+            <tr>
+                <td>Text box</td>
+                <td>Name:</td>
+                <td><input type="text" placeholder="Enter name"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>Password:</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Text area</td>
+                <td>Address:</td>
+                <td><textarea placeholder="Enter address"></textarea></td>
+            </tr>
+            <tr>
+                <td>Drop down list</td>
+                <td>Area:</td>
+                <td><select><option>Center</option></select></td>
+            </tr>
+            <tr>
+                <td>Check box</td>
+                <td>Hobbies:</td>
+                <td>
+                    <input type="checkbox" name="hobby1" value="sport">Sport <br>
+                    <input type="checkbox" name="hobby2" value="readin">Reading <br>
+                    <input type="checkbox" name="hobby3" value="tv">T.V. <br>
+                    <input type="checkbox" name="hobby4" value="internet">Internet <br>
+                </td>
+            </tr>
+            <tr>
+                <td>Radio Buttons</td>
+                <td>Gender:</td>
+                <td>
+                    <fieldset>
+                        <legend>Gender selection</legend>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>File upload</td>
+                <td>Your image:</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td>Buttons</td>
+                <td>Actions:</td>
+                <td>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="reset">
+                    <button type="button">Button</button>
+                </td>
+            </tr>
+        </form>
+        </table>
+    </body>
+</html>
