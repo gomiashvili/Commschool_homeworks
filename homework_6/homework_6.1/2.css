@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box; 
+}
+header, .column {
+    border: 1px solid grey;
+}
+main {
+    height: 60vh;
+}
+header {
+    height: 40vh;
+}
+.column {
+    float:left;
+    width:33.33%;
+    height: 100%;
+}
