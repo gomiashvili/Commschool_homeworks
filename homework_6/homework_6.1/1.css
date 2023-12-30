@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+header, main, footer {
+    height: 33.3vh;
+    border: 1px solid grey;
+    width: 100%;
+    text-align: center;
+}
