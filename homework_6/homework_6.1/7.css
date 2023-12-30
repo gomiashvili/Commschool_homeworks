@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin-top: 0px;
+}
+header {
+    height: 70vh;
+}
+footer {
+    height: 30vh;
+    border: 1px solid grey;
+}
+.col {
+    float:left;
+    height:100%;
+    width: 25%;
+    border: 1px solid grey;
+}
+.container {
+    float:right;
+    height: 100%;
+    width: 75%;
+    border: 1px solid grey;
+}
+.row1 {
+    height:45%;
+    border: 1px solid grey;
+}
+.row2 {
+    height: 55%;
+    border: 1px solid grey;
+}
+.col1 {
+    float: left;
+    width: 66%;
+    height: 100%;
+    border: 1px solid grey;
+}
+.col2 {
+    float: right;
+    width: 34%;
+    height: 100%;
+    border: 1px solid grey;
+} 
