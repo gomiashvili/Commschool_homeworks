@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+header, footer {
+    background-color: grey;
+    color: white;
+    padding: 25px;
+    clear:both;
+}
+header, main, footer {
+    max-width: 800px;
+    margin:auto;
+}
+.col1 {
+    float: left;
+    width:30%;
+}
+.col2 {
+    float:right;
+    width: 70%;
+    margin-top: 16px;
+}
+ul {
+    list-style-type: none;
+    padding: 10px 10px 30px 5px;
+}
+li {
+    background-color: #00bfff;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
