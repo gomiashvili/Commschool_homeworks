@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.red {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: red;
+    animation-name: firstAnimation;
+    animation-duration: 8s;
+}
+@keyframes firstAnimation {
+   0% {left:0; top: 0;}
+   25% {left: calc(50%-50px); top: 0;}
+   100% {left:calc(100% - 100px ); top:0;}
+}
