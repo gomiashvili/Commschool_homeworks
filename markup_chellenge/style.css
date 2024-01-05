@@ -7,14 +7,12 @@
    width: 1200px;
    height: 4403px;
    margin:auto;
-   background-color: aquamarine
 }
 .header-section {
     position:relative;
     width: 1116px;
     height: 540px;
     margin:auto;
-    background-color: beige;
 }
 header {
     width: 1200px;
@@ -99,7 +97,6 @@ border: none;
     width:940px;
     height:892px;
     margin: 144px auto 44px;
-    background-color:beige;
     margin-bottom: 166px;
 }
 .services-section h1 {
@@ -184,7 +181,6 @@ margin-left: 26px;
     width: 955px;
     height: 358px;
     margin-left: 100px;
-    background-color: #FFF;
 }
 #illustration_2 {
     width: 487px;
@@ -195,13 +191,13 @@ margin-left: 26px;
     margin-top: 43px;
     width: 364px;
     height: 291px;
-    background-color: bisque;
 }
 .providers-text h1 {
     color: #000;
     font-family: Muli;
     font-size: 35px;
     font-weight: 700;
+    line-height: 42px;
 }
 .providers-text p {
     color: #7D7987;
@@ -210,7 +206,7 @@ margin-left: 26px;
     font-style: normal;
     font-weight: 300;
     width: 337.5px;
-    line-height: 28px
+    line-height: 22.5px
 }
 .rectangle {
     width:42px;
@@ -220,3 +216,159 @@ margin-left: 26px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+#providers_btn {
+    width: 150px;
+    height: 42px;
+    border-radius: 41px;
+    border: 1.4px solid #458FF6;
+    color: #458FF6;
+    margin-top: 30px;
+}
+.dowload-app {
+    position: relative;
+    width: 1025px;
+    height: 507px;
+    margin-left: 210px;
+    margin-bottom: 200px;
+}
+.download-text {
+    position:absolute;
+    width: 315px;
+    left: 0;
+    top: 210px;
+    height: 282px;
+    background-color: #FFF;
+}
+.download-text h1 {
+    color: #000;
+    font-family: Muli;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 36px; /* 133.333% */
+    margin-bottom: 22.5px;
+}
+.download-text p {
+color: #7D7987;
+font-family: Muli;
+font-size: 17px;
+font-style: normal;
+font-weight: 300;
+line-height: 22.5px; /* 166.667% */
+margin-bottom: 30px;
+}
+#download_btn {
+    width: 150px;
+    height: 42px;
+    border-radius: 41px;
+    border: 1.4px solid #458FF6;
+    color: #458FF6;
+}
+#illustration_3 {
+    position:absolute;
+    width: 500px;
+    height: 326px;
+    left: 368px;
+    top:180px;
+}
+.customers {
+    position: relative;
+    width: 840px;
+    height: 319px;
+    margin:auto;
+    border-radius: 18px;
+    background: linear-gradient(208deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    margin-bottom: 35px;
+}
+#person_photo {
+    width: 105px;
+    height: 105px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-top: -7.5px;
+    margin-right: 22px;
+    float: left;
+}
+.review {
+    position: absolute;
+    width: 663px;
+    height: 90px;
+    left: 88px;
+    top: 162px;
+}
+.person-info {
+    float: left;
+}
+.comments {
+    float: left;
+    margin-left: 82.5px;
+    width: 315px;
+    height: 90px;
+    color: rgba(255, 255, 255, 0.90);
+    font-family: Muli;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.5px; /* 157.895% */
+}
+
+    .name {
+        color: #FFF;
+        font-family: Muli;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36px; /* 218.182% */
+        margin-top: 15px;
+    } 
+    .info {
+    color: rgba(255, 255, 255, 0.85);
+    font-family: Muli;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 266.667% */
+    margin-top: -10px;
+    }
+    .customers h1 {
+    top: 48px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #FFF;
+    font-family: Muli;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px; /* 133.333% */
+    }
+    .comments-rectangle {
+    position: absolute;
+    top: 107px;
+    left: 0;
+    right: 0;
+    width:42px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #FFF;
+    margin:auto;
+    }
+    .customers-section {
+        width: 840px;
+        height: 355px;
+        margin:auto;
+    }
+    .slider {
+        width: 254px;
+        margin: auto;
+        margin-top: -26px;
+        margin-bottom: 162px;
+    }
+    .arrow {
+        width: 24px;
+    }
+    .slider-dots {
+        width: 70px;
+        margin-left: 63px;
+        margin-right: 63px;
+    }
