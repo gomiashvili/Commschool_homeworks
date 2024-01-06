@@ -7,6 +7,13 @@
     font-family: Muli;
     src: url(Fonts/Muli.ttf);
 }
+
+button {
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.8;
+}
 .trafalgar {
    width: 1200px;
    height: 4403px;
@@ -28,10 +35,15 @@ header {
     width: 120px;
     height: 31px;
     margin-left: 144px;
+    cursor: pointer;
+
+}
+#logo:hover {
+opacity: 0.8;
 }
 nav {
    float:right;
-   margin-right: 84px;
+   margin-right: 110px;
    margin-top: 6px;
 }
 .topNav li {
@@ -40,16 +52,21 @@ text-align: center;
 color:grey;
 font-family: Muli;
 list-style-type: none;
-font-size: 13.5px;
+font-size: 15px;
 opacity: 0.5;
-font-weight: 700;
+font-weight: 400;
 margin-right: 30px;
 }
+li:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
 #element {
-   width: 97.5px;
-   height: auto;
+   width: 98px;
+   height: 97px;
+   position: absolute;
    opacity: 0.3;
-   Top: 120px;
+   Top: 78px;
    Left: 0;
    overflow: hidden;
 }
@@ -58,7 +75,7 @@ margin-right: 30px;
     width: 334px;
     height: 254px;
     margin-left: 142.5px;
-    top: 140px;
+    top: 170px;
 }
 .header-text h1 {
  color: #000;
@@ -74,14 +91,9 @@ margin-right: 30px;
  font-weight: 300;
  margin-bottom: 34px;
 }
-#consult_btn {
- width: 150px;
- height: 42px;
-border-radius: 41px;
-background-color: #458FF6;
-color:white;
-font-family: Muli;
-font-size: 18px;
+.consult_btn {
+background-color: #458FF6 !important;
+color:white !important;
 border: none;
 }
 #illustration {
@@ -99,11 +111,13 @@ border: none;
     margin: 144px auto 44px;
     margin-bottom: 166px;
 }
-.services-section h1 {
-   text-align: center;
+.services-section h1, .providers-text h1, .download-text h1 {
    font-family: Muli;
-   font-size: 35px;
-   margin-bottom: 44px;
+   font-size: 28px;
+   margin-bottom: 25px;
+}
+.services-section h1 {
+    text-align: center;
 }
 .services-section > p {
    width:714px;
@@ -114,7 +128,7 @@ border: none;
    font-size: 15.5px;
    color: #7D7987;
    font-weight: 300;
-   line-height: 30px; /* 166.667% */
+   line-height: 30px;
    }
 .services {
     width:870px;
@@ -129,19 +143,17 @@ border: none;
     border-radius: 15px;
     background: #FFF;
     margin: 12.7px;
-/* drop shadow */
     box-shadow: 7.5px 30px 37.5px 0px rgba(229, 233, 246, 0.40);
 }
-
 #frame {
     position:absolute;
     width: 650px;
     height: auto;
     /* Opacity: 60%; */
-    left: 65px;
+    left: -100px;
     z-index: -1;
     /* rotate: -21.46deg; */
-    top: 730px;
+    top: 70px;
 }
 .services-img {
     margin-left:25.5px;
@@ -165,26 +177,35 @@ margin-left: 26px;
     position: absolute;
     width: 99px;
     height:auto;
-    top: 1120px;
-    left: 1078px;
+    top: 490px;
+    left: 825px;
     z-index: -1;
+}
+#providers_element {
+    width: 64px;
+    position: absolute;
+    bottom: -80px;
+    right: -130px;
 }
 .btn {
     display:block;
     width: 150px;
     height: 42px;
     border-radius: 41px;
+    color: #458FF6;
     border: 1.4px solid #458FF6;
+    background: #FFF;
+
 }
-#services_btn {
-    display:block;
-    width: 150px;
-    height: 42px;
-    border-radius: 41px;
-    border: 1.4px solid #458FF6; 
+.btn:hover {
+    background-color: #458FF6;
+    color: white;
+}
+.services_btn {
     margin: 35px auto 165px auto;
 }
 .providers-section {
+    position: relative;
     width: 955px;
     height: 358px;
     margin-left: 100px;
@@ -199,17 +220,10 @@ margin-left: 26px;
     width: 364px;
     height: 291px;
 }
-.providers-text h1 {
-    color: #000;
-    font-family: Muli;
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 42px;
-}
-.providers-text p {
+.providers-text p, .download-text p {
     color: #7D7987;
     font-family: Muli;
-    font-size: 18px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 300;
     width: 337.5px;
@@ -220,15 +234,21 @@ margin-left: 26px;
     height: 2px;
     border-radius: 1px;
     background-color: #000;
+    margin:auto;
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#providers_btn {
-    width: 150px;
-    height: 42px;
-    border-radius: 41px;
-    border: 1.4px solid #458FF6;
-    color: #458FF6;
+.left {
+    margin-left: 0px;
+}
+.white-rect {
+    background-color:  white;
+    top: 100px;
+    position:absolute;
+    left: 0;
+    right: 0;
+}
+.providers_btn {
     margin-top: 30px;
 }
 .dowload-app {
@@ -246,30 +266,10 @@ margin-left: 26px;
     height: 282px;
     background-color: #FFF;
 }
-.download-text h1 {
-    color: #000;
-    font-family: Muli;
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 36px; /* 133.333% */
-    margin-bottom: 22.5px;
-}
 .download-text p {
-color: #7D7987;
-font-family: Muli;
-font-size: 17px;
-font-style: normal;
-font-weight: 300;
-line-height: 22.5px; /* 166.667% */
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
-#download_btn {
-    width: 150px;
-    height: 42px;
-    border-radius: 41px;
-    border: 1.4px solid #458FF6;
-    color: #458FF6;
-}
+
 #illustration_3 {
     position:absolute;
     width: 500px;
@@ -295,6 +295,26 @@ margin-bottom: 30px;
     margin-right: 22px;
     float: left;
 }
+#left_image {
+    position:absolute;
+    width: 98px;
+    left:-125px;
+    top: 40px;
+    z-index: -1;
+}
+#right_image {
+    position: absolute;
+    width: 98px;
+    left:690px;
+    top: -170px;
+}
+#vector {
+    position:absolute;
+    width: 320px;
+    top: 70px;
+    right: -35px;
+    z-index: -1;
+}
 .review {
     position: absolute;
     width: 663px;
@@ -312,7 +332,7 @@ margin-bottom: 30px;
     height: 90px;
     color: rgba(255, 255, 255, 0.90);
     font-family: Muli;
-    font-size: 17px;
+    font-size: 14.5px;
     font-style: normal;
     font-weight: 400;
     line-height: 22.5px; /* 157.895% */
@@ -321,7 +341,7 @@ margin-bottom: 30px;
     .name {
         color: #FFF;
         font-family: Muli;
-        font-size: 18px;
+        font-size: 16.5px;
         font-style: normal;
         font-weight: 700;
         line-height: 36px; /* 218.182% */
@@ -330,7 +350,7 @@ margin-bottom: 30px;
     .info {
     color: rgba(255, 255, 255, 0.85);
     font-family: Muli;
-    font-size: 17px;
+    font-size: 13.5px;
     font-style: normal;
     font-weight: 400;
     line-height: 36px; /* 266.667% */
@@ -347,7 +367,7 @@ margin-bottom: 30px;
     font-size: 31px;
     font-style: normal;
     font-weight: 700;
-    line-height: 36px; /* 133.333% */
+    line-height: 36px;
     }
     .comments-rectangle {
     position: absolute;
@@ -392,7 +412,7 @@ margin-bottom: 30px;
         font-size: 34px;
         font-style: normal;
         font-weight: 700;
-        line-height: 42px; /* 155.556% */
+        line-height: 42px;
         text-align: center;
     }
     .articles {
@@ -408,6 +428,7 @@ margin-bottom: 30px;
         margin: 0px 13.5px 0px 13.5px;
         overflow: hidden;
         border-radius: 15px;
+        background-color: white;
     }
     .articles img {
         height: 180px;
@@ -450,12 +471,8 @@ margin-bottom: 30px;
     }
     .article-btn {
         position:absolute;
-        width: 150px;
-        height: 42px;
         top: 565px;
         left: 453px;
-        border-radius: 41px;
-        border: 1.4px solid #458FF6;
     }
     footer {
         position: relative;
@@ -470,7 +487,19 @@ margin-bottom: 30px;
         left: 143px;
         width: 1056px;
         height: 166px;
-
+    }
+    #footer_img1 {
+        position: absolute;
+        width: 98px;
+        top: -52px;
+        right: 68px;
+        z-index: -1;
+    }
+    #footer_img2 {
+        position:absolute;
+        width: 98px;
+        top: 250px;
+        left:-15px;
     }
     .trafalgar-info {
         float:left;
@@ -489,12 +518,7 @@ margin-bottom: 30px;
         width: 202px;
         height: 100%;
     }
-    .region {
-        float:left;
-        width: 175px;
-        height: 100%;
-    }
-    .help {
+    .region, .help {
         float:left;
         width: 175px;
         height: 100%;
