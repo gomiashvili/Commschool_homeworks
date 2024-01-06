@@ -3,6 +3,10 @@
     margin: 0px;
     padding: 0px;
 }
+@font-face {
+    font-family: Muli;
+    src: url(Fonts/Muli.ttf);
+}
 .trafalgar {
    width: 1200px;
    height: 4403px;
@@ -20,7 +24,6 @@ header {
     margin:auto;
     margin-top:46.5px;
 }
-
 #logo {
     width: 120px;
     height: 31px;
@@ -37,13 +40,10 @@ text-align: center;
 color:grey;
 font-family: Muli;
 list-style-type: none;
-font-size: 18px;
+font-size: 13.5px;
+opacity: 0.5;
 font-weight: 700;
 margin-right: 30px;
-}
-.container {
-    width:1200px;
-    margin: auto;
 }
 #element {
    width: 97.5px;
@@ -62,19 +62,19 @@ margin-right: 30px;
 }
 .header-text h1 {
  color: #000;
- font-family: Muli;
- font-size: 42px;
+ font-family: Muli !important;
+ font-size: 37px !important;
  font-weight: 700;
  margin-bottom: 19px;
 }
 .header-text p {
  color: #7D7987;
  font-family: Muli;
- font-size: 17.5px;
+ font-size: 16px;
  font-weight: 300;
  margin-bottom: 34px;
 }
-#consult {
+#consult_btn {
  width: 150px;
  height: 42px;
 border-radius: 41px;
@@ -89,7 +89,7 @@ border: none;
  width: 520px;
  height: 447px;
  left:558px;
- top: 65px;
+ top: 90px;
  overflow: hidden;
 }
 .services-section {
@@ -169,12 +169,19 @@ margin-left: 26px;
     left: 1078px;
     z-index: -1;
 }
-#services_btn {
+.btn {
     display:block;
     width: 150px;
     height: 42px;
     border-radius: 41px;
     border: 1.4px solid #458FF6;
+}
+#services_btn {
+    display:block;
+    width: 150px;
+    height: 42px;
+    border-radius: 41px;
+    border: 1.4px solid #458FF6; 
     margin: 35px auto 165px auto;
 }
 .providers-section {
@@ -344,7 +351,7 @@ margin-bottom: 30px;
     }
     .comments-rectangle {
     position: absolute;
-    top: 107px;
+    top: 66px;
     left: 0;
     right: 0;
     width:42px;
@@ -361,7 +368,7 @@ margin-bottom: 30px;
     .slider {
         width: 254px;
         margin: auto;
-        margin-top: -26px;
+        margin-top: -12px;
         margin-bottom: 162px;
     }
     .arrow {
@@ -372,3 +379,141 @@ margin-bottom: 30px;
         margin-left: 63px;
         margin-right: 63px;
     }
+    .article-section {
+        position: relative;
+        width: 1057px;
+        height: 608px;
+        margin:auto;
+        margin-top: 162px;
+    }
+    .article-section h1 {
+        color: #000;
+        font-family: Muli;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 42px; /* 155.556% */
+        text-align: center;
+    }
+    .articles {
+        position: absolute;
+        top: 123px;
+        width: 869px;
+        height: 384px;
+        left: 82px;
+    }
+    .articles div {
+        float: left;
+        width: 262.5px;
+        margin: 0px 13.5px 0px 13.5px;
+        overflow: hidden;
+        border-radius: 15px;
+    }
+    .articles img {
+        height: 180px;
+    }
+    .article-title {
+        width: 201px;
+        margin: auto;
+        color: #000;
+        font-family: Muli;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 24px; /* 152.381% */
+        margin-bottom: 9px;
+    }
+    .article-content {
+        width: 199px;
+        margin: auto;
+     
+    font-family: Muli;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px; /* 175% */
+    margin-bottom: 18px;
+    }
+    .article-read-more {
+        height: 21px;
+        width: 200px;
+        margin-left:30px;
+        color: #4089ED;
+        font-family: Muli;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        text-align: left;
+        border: none;
+        background-color: white !important;
+    }
+    .article-read-more svg {
+        margin-left: 5px;
+    }
+    .article-btn {
+        position:absolute;
+        width: 150px;
+        height: 42px;
+        top: 565px;
+        left: 453px;
+        border-radius: 41px;
+        border: 1.4px solid #458FF6;
+    }
+    footer {
+        position: relative;
+        margin-top: 152px;
+        width: 1200px;
+        height: 324px;
+        background: linear-gradient(183deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    }
+    .footer-text {
+        position: absolute;
+        top: 88px;
+        left: 143px;
+        width: 1056px;
+        height: 166px;
+
+    }
+    .trafalgar-info {
+        float:left;
+        width: 293px;
+        margin-right: 108px;
+    }
+    .trafalgar-info img {
+        height: 24px;
+        margin-bottom: 14px;
+    }
+    .trafalgar-info p:last-of-type {
+        margin-top: 10px;
+    }
+    .company {
+        float:left;
+        width: 202px;
+        height: 100%;
+    }
+    .region {
+        float:left;
+        width: 175px;
+        height: 100%;
+    }
+    .help {
+        float:left;
+        width: 175px;
+        height: 100%;
+    }
+    .footer-list {
+        list-style-type: none;
+    }
+    .footer-title {
+    color: #FFF;
+    font-family: Muli;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 45px; /* 300% */
+    }
+    .footer-list li, .trafalgar-info p {
+        color: #FFF;
+        font-family: Muli;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 28px; /* 211.111% */
+    }
+    
