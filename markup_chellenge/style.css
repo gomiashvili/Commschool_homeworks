@@ -149,15 +149,16 @@ border: none;
     position:absolute;
     width: 650px;
     height: auto;
-    /* Opacity: 60%; */
+    opacity: 0.6;
     left: -100px;
     z-index: -1;
-    /* rotate: -21.46deg; */
     top: 70px;
 }
 .services-img {
     margin-left:25.5px;
     margin-top: 40.5px;
+    margin-bottom: 17px;
+    height: 72px;
 }
 .services-h3 {
 color: #000;
@@ -249,7 +250,7 @@ margin-left: 26px;
     right: 0;
 }
 .providers_btn {
-    margin-top: 30px;
+    margin-top: 35px;
 }
 .dowload-app {
     position: relative;
@@ -391,6 +392,10 @@ margin-left: 26px;
         margin-top: -12px;
         margin-bottom: 162px;
     }
+    .arrow:hover, .slider-dots:hover {
+        opacity: 0.6;
+        cursor: pointer;
+    }
     .arrow {
         width: 24px;
     }
@@ -507,11 +512,11 @@ margin-left: 26px;
         margin-right: 108px;
     }
     .trafalgar-info img {
-        height: 24px;
-        margin-bottom: 14px;
+        height: 30px;
+        margin-bottom: 5px;
     }
     .trafalgar-info p:last-of-type {
-        margin-top: 10px;
+        margin-top: 5px;
     }
     .company {
         float:left;
@@ -536,7 +541,7 @@ margin-left: 26px;
     .footer-list li, .trafalgar-info p {
         color: #FFF;
         font-family: Muli;
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 300;
         line-height: 28px; /* 211.111% */
     }
