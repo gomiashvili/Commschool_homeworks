@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url(images/background-top.png);
+    background-image: url(images/background-top.png), url(images/background-bottom.png);
+    background-position: top, bottom;
     background-repeat: no-repeat;
 }
 @font-face {
     font-family: Roboto;
     src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+button, a {
+    cursor: pointer;
 }
 .wrapper {
     max-width: 1600px;
@@ -144,7 +148,6 @@ justify-content: space-between;
 }
 .features div {
     width: 32%;
-    border: 1px solid black;
     min-width: 245px;
 }
 .features div img {
@@ -183,17 +186,190 @@ margin-bottom: 0px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 .text-box {
-width: 50%;
-background-color:bisque;
+width: 30rem;
+}
+.text-box h2 {
+color: #172755;
+font-family: Roboto;
+font-size: 2.5rem;
+font-weight: 700;
+margin-bottom: 30px;
+}
+.text-box p {
+    color: #8794BA;
+    font-family: Roboto;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 150%; /* 1.6875rem */  
 }
 .img-box {
-width: 50%;
+width: 37.5rem;
+height: 25.625rem;
+flex-shrink: 0;
 border-radius: 2vw;
 background: #FFF;
 box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.20);
 }
 .img-box img {
     width: 100%;
+}
+.pricing-plans {
+    width: 74vw;
+    margin:auto;
+    margin-top: 386px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pricing-plans h1 {
+color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 40px;
+font-weight: 700;
+margin-bottom: 30px;
+}
+.pricing-plans > p {
+max-width: 43vw;
+margin:auto;
+color: var(--text-secondary, #8794BA);
+text-align: center;
+font-family: Roboto;
+font-size: 18px;
+font-weight: 400;
+line-height: 150%; /* 27px */
+margin-bottom: 80px;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.cards > div {
+ width: 21.25rem;
+ height: 27.5rem;
+ flex-shrink: 0;
+ border-radius: 1.875rem;
+opacity: 0.7;
+background: #0F1F4B;
+box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.20);
+}
+.cards > div:hover {
+    background-color: #FFF;
+}
+.cards > div:hover .price {
+    color: #172755;
+}
+.cards > div:hover h3{
+    color: #172755;
+}
+.cards > div:hover .price span {
+    color: #172755;
+} 
+.cards > div:hover button {
+    background-color: #EF2A82;
+    border: none;
+}
+.cards h3 {
+    color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 1.875rem;
+font-weight: 700;
+margin-top: 3.12rem;
+margin-bottom: 0.62rem;
+}
+.desc {
+color:  #8794BA;
+text-align: center;
+font-family: Roboto;
+font-size: 1.125rem;
+font-weight: 400;
+line-height: 150%; /* 1.6875rem */
+}
+.line {
+ width: 13.75rem;
+height: 0.0625rem;
+margin: 2.31rem auto 1.75rem;
+background: #2A407C;
+}
+.price {
+color: #FFF;
+font-family: Roboto;
+font-size: 3.75rem;
+font-weight: 700;
+text-align: center;
+}
+.price span {
+    color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 1.875rem;
+font-weight: 700;
+}
+.month {
+    color: #8794BA;
+text-align: center;
+font-family: Roboto;
+font-size: 1rem;
+font-weight: 400;
+line-height: 140%; /* 1.4rem */
+margin-bottom: 2.5rem;
+}
+.cards button {
+height: 3.125rem;
+padding: 0.625rem 5rem;
+display: block;
+margin:auto;
+border-radius: 4.25rem;
+border: 1px solid #2A407C;
+color: #FFF;
+font-family: Roboto;
+font-size: 1rem;
+font-weight: 400;
+background:none;
+}
+footer {
+    width: 74vw;
+    height: 5.875rem;
+    margin: 6.25rem auto 6.44rem;
+    border-top: 4px solid #2A407C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 3.94rem;
+}
+.footer-logo {
+    width: 8.62606rem;
+    height: 1.875rem;
+    flex-shrink: 0;
+}
+.footer-logo img {
+    width: 100%;
+}
+.footer-menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2.25rem;
+}
+.footer-menu li {
+color: #8794BA;
+font-family: Roboto;
+font-size: 0.875rem;
+font-weight: 400;
+}
+.footer-icons {
+    display: flex;
+    width: 8.4rem;
+    justify-content: space-between;
+}
+.footer-icons img {
+    width: 1.25rem;
+    height: 1.25rem;
 }
