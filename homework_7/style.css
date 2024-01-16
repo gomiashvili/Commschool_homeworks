@@ -32,14 +32,14 @@ header {
     margin-top: 50px;
 }
 .logo {
-    width: 11.5vw;
+    width: 15.5%;
 }
 .logo img {
     width: 100%;
     min-width: 127px;
 }
 nav {
-    margin-left: 5vw;
+    margin-left: 7%;
     max-width: 352px;
 }
 .menu, .right {
@@ -55,7 +55,7 @@ font-weight: 400;
 margin-right: 2.2vw;
 }
 .right {
-    margin-left: 19vw;
+    margin-left: 23%;
     align-items: center;
 }
 .right li {
@@ -87,7 +87,7 @@ margin-left: 2.5vw;
     margin-top:70px;
 }
 .text-block {
- width: 36vw;
+ width: 46%;
  min-width: 265px;
 }
 .text-block h1 {
@@ -170,7 +170,7 @@ margin:auto;
 color:  #172755;
 text-align: center;
 font-family: Roboto;
-font-size: 16px;
+font-size: 1rem;
 font-weight: 700;
 margin-top: 25px;
 }
@@ -179,9 +179,9 @@ margin-top: 15px;
 color: #8794BA;
 text-align: center;
 font-family: Roboto;
-font-size: 16px;
+font-size: 1rem;
 font-weight: 400;
-line-height: 140%; /* 22.4px */
+line-height: 140%;
 margin-bottom: 0px;
 }
 
@@ -237,17 +237,17 @@ box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.20);
 color: #FFF;
 text-align: center;
 font-family: Roboto;
-font-size: 40px;
+font-size: 2.5rem;
 font-weight: 700;
 margin-bottom: 30px;
 }
 .pricing-plans > p {
-max-width: 43vw;
+max-width: 55%;
 margin:auto;
 color: #8794BA;
 text-align: center;
 font-family: Roboto;
-font-size: 18px;
+font-size: 1.125rem;
 font-weight: 400;
 line-height: 150%;
 margin-bottom: 80px;
@@ -259,13 +259,14 @@ margin-bottom: 80px;
     gap: 20px;
 }
 .cards > div {
- width: 21.25rem;
+ width: 29%;
  height: 27.5rem;
  flex-shrink: 0;
  border-radius: 1.875rem;
 opacity: 0.7;
 background: #0F1F4B;
 box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.20);
+min-width: 335px;
 }
 .cards > div:hover {
     background-color: #FFF;
