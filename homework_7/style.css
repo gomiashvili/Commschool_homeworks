@@ -19,12 +19,12 @@ button:hover {
     opacity: 0.7;
 }
 .wrapper {
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
 }
     
 header {
-    width: 74vw;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -48,18 +48,18 @@ nav {
     flex-direction: row;
 }
 .menu li {
-color: var(--text-secondary, #8794BA);
+color:#8794BA;
 font-family: Roboto;
 font-size: 16px;
 font-weight: 400;
 margin-right: 2.2vw;
 }
 .right {
-    margin-left: 20%;
+    margin-left: 19vw;
     align-items: center;
 }
 .right li {
-    color: var(--text-secondary, #8794BA);
+    color: #8794BA;
 font-family: Roboto;
 font-size: 16px;
 font-weight: 400;
@@ -85,7 +85,6 @@ margin-left: 2.5vw;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top:70px;
-    margin-left: 13%;
 }
 .text-block {
  width: 36vw;
@@ -101,7 +100,7 @@ margin-bottom: 15px;
 margin-top: 78px;
 }
 .text-block p, .main-features p {
-color: var(--text-secondary, #8794BA);
+color: #8794BA;
 font-family: Roboto;
 font-size: 18px;
 font-weight: 400;
@@ -123,17 +122,20 @@ font-weight: 400;
 outline: none;
 border:none;
 }
-.main-screen {
+/*.main-screen {
 width: 48vw;
 flex-shrink: 0;
 min-width: 355px;
-}
-.main-screen img {
-    width: 100%;
+} */
+.content img {
+    width: 48vw;
+    min-width: 355px;
+    position: absolute;
+    right: 0;
 }
 .main-features {
-    width: 74vw;
-    margin: 134px auto;
+    width: 100%;
+    margin: 280px auto 130px;
 }
 .main-features h1 {
 color: #172755;
@@ -148,7 +150,7 @@ margin: 30px auto 80px;
 text-align: center;
 }
 .features {
-width: 74vw;
+width: 100%;
 display: flex;
 flex-wrap: wrap;
 gap: 20px;
@@ -184,8 +186,7 @@ margin-bottom: 0px;
 }
 
 .screenshots {
-    width: 74vw;
-    margin: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 120px;
@@ -226,8 +227,7 @@ box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.20);
     width: 100%;
 }
 .pricing-plans {
-    width: 74vw;
-    margin:auto;
+    width: 100%;
     margin-top: 386px;
     display: flex;
     flex-direction: column;
@@ -244,7 +244,7 @@ margin-bottom: 30px;
 .pricing-plans > p {
 max-width: 43vw;
 margin:auto;
-color: var(--text-secondary, #8794BA);
+color: #8794BA;
 text-align: center;
 font-family: Roboto;
 font-size: 18px;
@@ -343,7 +343,7 @@ font-weight: 400;
 background:none;
 }
 footer {
-    width: 74vw;
+    width: 100%;
     height: 5.875rem;
     margin: 6.25rem auto 6.44rem;
     border-top: 4px solid #2A407C;
