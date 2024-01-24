@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <button onclick="myFunction()">Login</button>
+    <script>
+        function myFunction() {
+    let passWord;
+    let user=prompt("Who's there?");
+    if (user=="" || user==null) {
+        alert("Canceled");
+    } else if (user!="Admin") {
+        alert("I don't know you.");
+    } else {
+        passWord=prompt("Password?");
+        if (passWord=="" || passWord==null) {
+            alert("Canceled");
+        } else if(passWord=="TheMaster") {
+            alert("Welcome!");
+        } else alert("Wrong password");
+    }
+}
+    </script>
+</body>
+</html>
