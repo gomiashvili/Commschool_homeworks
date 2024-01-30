@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <script>
+        function isPrime(n) {
+            for(let i=2; i<n; i++) {
+                if(n%i===0) {
+                    return false;
+                }
+            }
+            return n>1;
+        }
+        function showPrimes(n) {
+            for(let j=2; j<n; j++) {
+                if(isPrime(j)) {
+                    primeNumbers.push(j);
+                }
+            }
+        }
+        let primeNumbers=[];
+        let number=prompt("Enter number");
+        showPrimes(number);
+        alert(primeNumbers);
+    </script>
+</body>
+</html>
