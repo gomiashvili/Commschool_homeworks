@@ -1,1 +1,1 @@
-document.getElementById('div1').style.marginLeft = '30px';
+document.getElementById('div1').style.marginLeft = '40px';
